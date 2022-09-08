@@ -18,7 +18,7 @@ resource "google_compute_subnetwork" "subnet" {
     
     content {
         range_name = secondary_ip_range.key
-        ip_cidr_range = secondary_ip_range.value.ip-range
+        ip_cidr_range = secondary_ip_range.value.cidr
     }
   }
 }

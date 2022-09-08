@@ -9,10 +9,10 @@ module "vpc" {
             region = "us-central1"
             sec-range = {
               "pod-range" = {
-                ip-range = "10.0.0.0/26"
+                cidr = "10.0.0.0/26"
               }
               "svc-range" = {
-                ip-range = "192.168.11.0/25"
+                cidr = "192.168.11.0/25"
               }
             }
         }
